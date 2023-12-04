@@ -1,6 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
 import { Tile } from "./Tile";
-import "../app/globals.css"; // tailwindを効かせるために必要
 
 const meta: Meta<typeof Tile> = {
   component: Tile,
