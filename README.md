@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## このリポジトリはなに？
+storybookのチュートリアルを実施した完成系のリポジトリです。
+勉強会で映写した資料も`./映写資料.pdf`に格納してあります。
 
-## Getting Started
+## このリポジトリをクローンした場合
 
-First, run the development server:
+※node.jsのインストールが必要です。
+- storybookの起動
+  - `npm install`
+  - `npm run storybook​`
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 勉強会ハンズオンの手順について再掲
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. エディタとコマンドを打てるツールを起動してください​
+   1. エディタ: VS Code​
+   2. コマンドツール: ターミナル、パワーシェル​
+2. Node.jsをインストールする​
+   1. Node.jsが使えるかどうかコマンドツールで確認​
+      1. `node --version`​
+      2. `npm --version`​
+   2. つかえなかったらインストール​
+      1. https://nodejs.org/en
+      2. インストール完了後、再度確認
+      3. ​`node --version`​
+      4. `npm --version`
+3. npx のインストール​
+   1. npx が使えるかどうか確認​
+      1. `npx --version`​
+   2. 使えなかったらインストール​
+      1. `npm i -g npx@latest`
+      2. インストール完了後、再度確認
+      3. ​`npx --version`
+4. Reactアプリの雛形作成(管理者実行)
+   1. `npx create-next-app@latest storybook-tutorial`
+5. 念の為、依存パッケージをインストール
+   1. `npm install`
+6. アプリケーションを起動してみる
+   1. `npm run dev`
+   2. http://localhost:3000/ にブラウザでアクセス(3000番ポートが使用されていた場合、別のポートの可能性あり。ターミナルに表示されているリンク。)
+7. ​不要な初期設定の削除
+   1. src/app/global.tsxの4行目以降を削除
+      1. サンプルページ表示のためのスタイルが​邪魔なため​
+8. Storybook を起動​
+   1. `npx sb init`
+   2. 何か聞かれたら全てyes​
+9. 起動完了🎉​
+10. 次回以降のStorybookの起動方法​
+    1.  `npm run storybook​`
