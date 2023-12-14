@@ -46,3 +46,8 @@ storybookのチュートリアルを実施した完成系のリポジトリで�
 9. 起動完了🎉​
 10. 次回以降のStorybookの起動方法​
     1.  `npm run storybook​`
+11. storybookでtailWindを使えるようにする
+    1.  .storybook/preview.tsにimportを追加
+      1.  `import "../src/app/globals.css";`
+  12. tailwind.config.tsのcontentに以下を追加
+      1.  `'./src/stories/**/*.{js,ts,jsx,tsx,mdx}'`
