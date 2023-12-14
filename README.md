@@ -2,6 +2,18 @@
 storybookのチュートリアルを実施した完成系のリポジトリです。
 勉強会で映写した資料も`./映写資料.pdf`に格納してあります。
 
+## 勉強会の中で登場するリンク集
+- Storybook HP
+  - https://storybook.js.org/
+- パーソルキャリア株式会社HP
+  - https://www.persol-career.co.jp/
+- 公開されているStorybook
+  - https://storybook.js.org/showcase
+  - 説明に用いたStorybook
+    - https://www.kickstartds.com/storybook/?path=/story/welcome--page
+- node.jsのダウンロードページ
+  - https://nodejs.org/en
+
 ## このリポジトリをクローンした場合
 
 ※node.jsのインストールが必要です。
